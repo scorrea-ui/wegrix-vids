@@ -1,0 +1,61 @@
+.c-header {
+  align-items: center;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  overflow: hidden;
+  padding: 20px;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  & img {
+    object-fit: contain;
+    height: 30px;
+  }
+
+  &__icons {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+  }
+
+  &__icon {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 30px;
+    margin: 10px 0 0 0;
+    min-width: 100px;
+
+    @media screen and (min-width: 768px) {
+      margin-right: 10px;
+    }
+
+    & p {
+      display: none;
+      font-size: 10px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    &:hover {
+      p {
+        display: inline-flex;
+      }
+    }
+
+    &--active {
+      p {
+        display: inline-flex;
+      }
+    }
+  }
+}

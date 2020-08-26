@@ -1,0 +1,57 @@
+.c-videoCard {
+  color: #fff;
+  height: 400px;
+  padding: 20px;
+  transition: transform 300ms ease-out;
+
+  @media screen and (min-width: 768px) {
+    width: 50%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 30%;
+  }
+
+  &:hover {
+    transform: scale(1.09);
+  }
+
+  &__stats {
+    display: none;
+  }
+
+  & img {
+    max-height: 200px;
+    object-fit: contain;
+    width: 100%;
+  }
+
+  &__title {
+    color: #fff;
+    display: block;
+  }
+
+  &__copy {
+    color: #fff;
+    padding-top: 10px;
+  }
+
+  &:hover {
+    & .c-videoCard__stats {
+      align-items: center;
+      display: flex;
+    }
+  }
+
+  &__overview {
+    align-items: center;
+    display: flex;
+    margin-bottom: 5px;
+  }
+
+  &__type,
+  &__date,
+  &__count {
+    margin-right: 1.4rem;
+  }
+}
