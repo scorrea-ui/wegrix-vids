@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import './App.scss'
-import Header from './components/global/Header'
 import { Nav } from './components/Nav'
 import Results from './components/Results'
 import { requests } from './api/requests'
