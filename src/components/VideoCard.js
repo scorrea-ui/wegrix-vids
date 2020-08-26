@@ -46,7 +46,8 @@ const VideoCard = forwardRef(({ movie, getMovie, getTv }, ref) => {
         <span className='c-videoCard__count'>{movie.vote_average}</span>
         <ThumbUpIcon />
       </p>
-      <div
+      <button
+      className="c-videoCard__watch"
         onClick={async () => {
         if(movie.media_type === 'movie') {
             const result = await getMovie()
@@ -58,7 +59,7 @@ const VideoCard = forwardRef(({ movie, getMovie, getTv }, ref) => {
         }}
       >
         Watch trailer
-      </div>
+      </button>
     </div>
   )
 })
