@@ -49,7 +49,7 @@ const VideoCard = forwardRef(({ movie, getMovie, getTv }, ref) => {
       <button
       className="c-videoCard__watch"
         onClick={async () => {
-        if(movie.media_type === 'movie') {
+        if(movie.media_type === 'movie' || movie.media_type === undefined) {
             const result = await getMovie()
             getTrailer(result)
         } else {
