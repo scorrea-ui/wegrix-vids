@@ -24,43 +24,7 @@ export const Nav = ({ setSelectedOption }) => {
               Playing
             </button>
           </li>
-          <li>
-            <button
-              onClick={() => setSelectedOption(requests.fetchComedyMovies)}
-            >
-              Comedy
-            </button>
-          </li>
-          <li>
-            <button
-              onClick={() => setSelectedOption(requests.fetchHorrorMovies)}
-            >
-              Horror
-            </button>
-          </li>
-          <li>
-            <button
-              onClick={() => setSelectedOption(requests.fetchRomanceMovies)}
-            >
-              Romance
-            </button>
-          </li>
-          <li>
-            <button onClick={() => setSelectedOption(requests.fetchScifi)}>
-              Sci-Fi
-            </button>
-          </li>
-          <li>
-            <button onClick={() => setSelectedOption(requests.fetchWestern)}>
-              Western
-            </button>
-          </li>
-          <li>
-            <button onClick={() => setSelectedOption(requests.fetchAnimation)}>
-              {' '}
-              Animation
-            </button>
-          </li>
+
           <li>
             <button onClick={() => setSelectedOption(requests.fetchTV)}>
               TV Shows

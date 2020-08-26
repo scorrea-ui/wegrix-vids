@@ -13,7 +13,7 @@ export const requests = {
   fetchScifi: `/discover/movie/?api_key=${API_KEY}&with_genres=878&append_to_response=videos`,
   fetchWestern: `/discover/movie/?api_key=${API_KEY}&with_genres=37&append_to_response=videos`,
   fetchAnimation: `/discover/movie/?api_key=${API_KEY}&with_genres=16&append_to_response=videos`,
-  fetchTV: `/discover/movie/?api_key=${API_KEY}&with_genres=10770&append_to_response=videos`,
+  fetchTV: `/tv/popular?api_key=${API_KEY}&append_to_response=videos`,
   fetchPlaying: `/movie/now_playing?api_key=${API_KEY}&append_to_response=videos`
 }
 
