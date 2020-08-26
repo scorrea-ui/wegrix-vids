@@ -17,7 +17,7 @@ const getTrailer = (result) => {
   }
 }
 
-const VideoCard = forwardRef(({ movie, getMovie }, ref) => {
+const VideoCard = forwardRef(({ movie, getMovie, getTv }, ref) => {
   return (
     <div className='c-videoCard' ref={ref}>
       <img
@@ -48,8 +48,13 @@ const VideoCard = forwardRef(({ movie, getMovie }, ref) => {
       </p>
       <div
         onClick={async () => {
-          const result = await getMovie()
-          getTrailer(result)
+        if(movie.media_type === 'movie') {
+            const result = await getMovie()
+            getTrailer(result)
+        } else {
+            const result = await getTv()
+            getTrailer(result)
+        }
         }}
       >
         Watch trailer

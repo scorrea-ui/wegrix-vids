@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { getMovie } from '../api/requests'
+import { getMovie, getTV } from '../api/requests'
 import '../styles/Results.scss'
 import VideoCard from './VideoCard'
 import FlipMove from 'react-flip-move'
@@ -28,6 +28,7 @@ const Results = ({ selectedOption }) => {
                 movie={movie}
                 key={!isNaN(movie.title) ? movie.title + index : index}
                 getMovie={() => getMovie(movie.id)}
+                getTv={() => getTV(movie.id)}
               />
             )
           })}

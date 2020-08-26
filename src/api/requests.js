@@ -21,3 +21,8 @@ export const getMovie = async (id) => {
   const result = await axios.get(`/movie/${id}/videos?api_key=${API_KEY}`)
   return result
 }
+
+export const getTV = async (id) => {
+  const result = await axios.get(`/tv/${id}/videos?api_key=${API_KEY}`)
+  return result
+}
