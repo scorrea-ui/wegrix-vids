@@ -19,9 +19,9 @@ export const Nav = ({ setSelectedOption }) => {
           </li>
           <li>
             <button
-              onClick={() => setSelectedOption(requests.fetchActionMovies)}
+              onClick={() => setSelectedOption(requests.fetchPlaying)}
             >
-              Action
+              Playing
             </button>
           </li>
           <li>
