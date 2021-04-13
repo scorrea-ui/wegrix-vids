@@ -1,0 +1,73 @@
+.c-videoCard {
+  color: #fff;
+  width: 100%;
+  padding: 20px;
+  transition: transform 300ms ease-out;
+
+  @media screen and (min-width: 768px) {
+    width: 50%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    height: 450px;
+    width: 30%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    &:hover {
+        transform: scale(1.09);
+      }
+  }
+
+  &__stats {
+    display: none;
+  }
+
+  & img {
+    margin-bottom: 20px;
+    object-fit: contain;
+    width: 100%;
+    
+    @media screen and (min-width: 1200px) {
+      max-height: 220px;
+    }
+  }
+
+  &__title {
+    color: #fff;
+    display: block;
+  }
+
+  &__copy {
+    color: #fff;
+    padding-top: 10px;
+  }
+
+  &__watch {
+    appearance: none;
+    background-color: #fff;
+    color: #0f495c;
+    cursor: pointer;
+    border: none;
+    padding: 5px 20px;
+  }
+
+  &:hover {
+    & .c-videoCard__stats {
+      align-items: center;
+      display: flex;
+    }
+  }
+
+  &__overview {
+    align-items: center;
+    display: flex;
+    margin-bottom: 5px;
+  }
+
+  &__type,
+  &__date,
+  &__count {
+    margin-right: 1.4rem;
+  }
+}
